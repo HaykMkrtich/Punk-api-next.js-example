@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 2.5rem 0 1.25rem;
+  display: flex;
+  gap: 0.25rem;
+  li {
+    list-style-type: none;
+    button {
+      all: unset;
+      cursor: pointer;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+      text-align: center;
+      border: 0.125rem solid black;
+      &:disabled {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}

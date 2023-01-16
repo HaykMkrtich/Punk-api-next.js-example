@@ -1,0 +1,29 @@
+@mixin container($padding) {
+  padding: 0 $padding + 10rem;
+  @media (max-width: 64rem) {
+    padding: 0 $padding + 2.5rem;
+  }
+}
+
+.main {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.border_line {
+  border: 10px solid transparent;
+  border-image-source: url('../../public/assets/border.png');
+  border-image-repeat: stretch;
+  border-image-slice: 12;
+}
+
+.glass_background {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2.5px);
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}

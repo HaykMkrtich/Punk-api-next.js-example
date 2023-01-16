@@ -1,0 +1,13 @@
+@import './src/styles/reusable_styles.scss';
+
+.wrapper {
+  @include container(0);
+  @extend .main;
+  .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}

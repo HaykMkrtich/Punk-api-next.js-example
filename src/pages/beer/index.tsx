@@ -1,5 +1,5 @@
 import BeersScreen from '@/app/screens/BeersScreen';
 
-export default function Home() {
+export default function Beer(): JSX.Element {
   return <BeersScreen />;
 }

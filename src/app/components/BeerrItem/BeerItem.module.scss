@@ -1,0 +1,30 @@
+@import './src/styles/reusable_styles.scss';
+
+.wrapper {
+  width: 23.75rem;
+  height: 23.75rem;
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @extend .border_line;
+  @extend .glass_background;
+
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.06);
+    .title {
+      text-decoration: underline;
+    }
+  }
+
+  .image {
+    position: relative;
+    height: 180px;
+    margin-top: 20px;
+    object-fit: contain;
+  }
+}
