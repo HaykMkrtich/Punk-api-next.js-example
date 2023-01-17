@@ -26,7 +26,7 @@ export default function BeersScreen(): JSX.Element {
 
       {search && (
         <h2 className="heading">
-          {beers?.length} beers found by searching <em>"{search}"</em>
+          {beers?.length} beers found by searching <em>&quot;{search}&quot;</em>
         </h2>
       )}
       <div className={styles.items}>

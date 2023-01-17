@@ -18,7 +18,7 @@ export default function Pagination({ pagesCount, onChangePage }: PaginationProps
       newPages.push(i);
     }
     setPages(newPages);
-  }, [currentPage]);
+  }, [currentPage, pagesCount]);
 
   return (
     <ul className={styles.wrapper}>
