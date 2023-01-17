@@ -23,8 +23,22 @@
 
   .image {
     position: relative;
-    height: 180px;
-    margin-top: 20px;
+    width: auto;
+    height: 11.25rem;
+    margin-top: 1.25rem;
     object-fit: contain;
+  }
+  @media (max-width: 45.5rem) {
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+
+    .image {
+      margin-top: 0.25rem;
+      height: 7rem;
+    }
+    .description {
+      font-size: 0.9rem;
+    }
   }
 }

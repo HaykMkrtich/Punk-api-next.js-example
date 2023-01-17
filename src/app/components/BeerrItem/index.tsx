@@ -22,7 +22,7 @@ export default function BeerItem({ beer }: BeerItemProps): JSX.Element {
         />
         <div>
           <h3 className={styles.title}>{beer.name}</h3>
-          <p>{shortenString(beer.description)}</p>
+          <p className={styles.description}>{shortenString(beer.description)}</p>
         </div>
       </div>
     </Link>
